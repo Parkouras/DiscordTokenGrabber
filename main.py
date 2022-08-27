@@ -23,7 +23,7 @@ def mainwindow():
     win = Tk()
     win.title("Discord Token Grabber")
     win.geometry("440x200")
-    Label(win, text="Username:", width=25).grid(row=0, column=0, padx=10, pady=10, sticky=S)
+    Label(win, text="Email:", width=25).grid(row=0, column=0, padx=10, pady=10, sticky=S)
     Label(win, text="Password:", width=25).grid(row=1, column=0, padx=10, pady=10)
     usernametext = StringVar()
     passwordtext = StringVar()
@@ -33,7 +33,7 @@ def mainwindow():
     username.grid(row=0, column=1)
     password = Entry(win, textvariable=passwordtext, show="*")
     password.grid(row=1, column=1)
-    Label(win, text="Token: ").grid(row=2, column=0, padx=10, pady=10)
+    Label(win, text="Status: ").grid(row=2, column=0, padx=10, pady=10)
     Button(win, text="Get Token", command=auth_user).grid(row=3, column=0, columnspan=3, padx=10, pady=10)
     win.mainloop()
     
