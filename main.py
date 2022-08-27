@@ -6,6 +6,8 @@ from selenium.webdriver.chrome.options import Options
 from tkinter import *
 from threading import Thread
 import pyperclip as clipboard
+import chromedriver_autoinstaller
+
 
 global usernametext
 global passwordtext
@@ -77,5 +79,5 @@ def auth_user():
 
 
 
-
+chromedriver_autoinstaller.install()
 mainwindow()
